@@ -54,7 +54,7 @@
     line: 'seeds = "{{ seeds }}"'
     state: present
   when: seeds is defined
-  
+
 - name: Update bootstrap-peers in config.toml file
   lineinfile:
     path: '{{ user_dir }}/{{ folder }}/config/config.toml'
