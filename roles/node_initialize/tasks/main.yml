@@ -44,6 +44,7 @@
     regexp: '^persistent_peers ='
     line: 'persistent_peers = "{{ peers }}"'
     state: present
+    firstmatch: true
   when: peers is defined
 
 - name: Update seeds in config.toml file
