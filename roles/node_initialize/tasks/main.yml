@@ -58,7 +58,7 @@
 - name: Update bootstrap-peers in config.toml file
   lineinfile:
     path: '{{ user_dir }}/{{ folder }}/config/config.toml'
-    #regexp: '^bootstrap-peers ='     # bootstrap-peers only appears in newer tendermint configs
+    regexp: '^bootstrap-peers ='     # bootstrap-peers only appears in newer tendermint configs
     insertafter: "^peers ="
     line: 'bootstrap-peers = "{{ seeds }}"'
     firstmatch: yes
