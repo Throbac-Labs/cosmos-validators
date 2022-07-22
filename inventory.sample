@@ -1,7 +1,7 @@
-[juno]
-juno_main ansible_host=10.0.0.1 type=main
-juno_backup ansible_host=10.0.0.2 type=backup prepare=false
-juno_relayer ansible_host=10.0.0.3 type=relayer prepare=false
+[celestia]
+celestia_main ansible_host=10.0.0.1 type=main
+celestia_backup ansible_host=10.0.0.2 type=backup prepare=false
+celestia_relayer ansible_host=10.0.0.3 type=relayer prepare=false
 
 [backups]
 backup_1 ansible_host=10.0.0.2
@@ -11,7 +11,7 @@ relayer_1 ansible_host=10.0.0.3
 
 [all:vars]
 ansible_user=ubuntu
-ansible_port=22
+ansible_port=22222
 ansible_ssh_private_key_file="~/.ssh/id_rsa"
 var_file="group_vars/{{ network }}.yml"
 user_dir="/home/{{ansible_user}}"
