@@ -1,4 +1,9 @@
 # Celestia Specific Notes
+## Resources
+
+- 4 core 8 GB ram 100 GB SSD
+- celestia app + bridge node = approx 50GB disk
+
 
 ## Install & Initialize Celestia App (from Control Machine)
 
