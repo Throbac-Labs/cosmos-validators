@@ -46,7 +46,7 @@ celestia-appd tx staking delegate \
 
 Multi step process
 
-### Install Celestia Node
+## Install Celestia Node
 ```
 cd $HOME 
 rm -rf celestia-node 
@@ -55,14 +55,14 @@ cd celestia-node/
 git checkout tags/v0.3.0-rc2 
 make install
 ```
-### Initialize Bridge Node
+## Initialize Bridge Node
 
 Once your celestia-app is synced
 ```
 celestia bridge init --core.remote http://localhost:16657 --core.grpc http://localhost:9090
 ```
 
-### Start Bridge Node
+## Start Bridge Node
 
 Create Celestia Bridge systemd file:
 ```
@@ -91,7 +91,7 @@ sudo systemctl enable celestia-bridge
 sudo systemctl start celestia-bridge
 sudo journalctl -u celestia-bridge.service -f
 ```
-### Connect Validator
+## Connect Validator
 
 export MONIKER="your_moniker"
 export VALIDATOR_WALLET="validator"
