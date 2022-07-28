@@ -110,7 +110,13 @@ celestia-appd tx staking create-validator \
     --keyring-backend=test
 ```
 
+#### Potential Tweaks
 
+config.toml edits
+```
+max-connections = 90
+use-legacy = false
+```
 
 
 
