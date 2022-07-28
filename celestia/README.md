@@ -92,10 +92,10 @@ sudo systemctl start celestia-bridge
 sudo journalctl -u celestia-bridge.service -f
 ```
 ## Connect Validator
-
+```
 export MONIKER="your_moniker"
 export VALIDATOR_WALLET="validator"
-
+```
 ```
 celestia-appd tx staking create-validator \
     --amount=1000000utia \
