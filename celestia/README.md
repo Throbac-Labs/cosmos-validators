@@ -107,7 +107,8 @@ celestia-appd tx staking create-validator \
     --commission-max-change-rate=0.01 \
     --min-self-delegation=1000000 \
     --from=$VALIDATOR_WALLET \
-    --keyring-backend=test
+    --keyring-backend=test \
+    --node http://localhost:16657
 ```
 
 #### Potential Tweaks
